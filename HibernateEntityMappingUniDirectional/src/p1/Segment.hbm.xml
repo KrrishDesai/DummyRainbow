@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="p1.Segment" table="segment">
+        <id name="sid" column="sid"></id>
+        <property name="x1" column="x1"></property>
+        <property name="y1" column="y1"></property>
+        <many-to-one name="e2" class="p1.Point"></many-to-one>
+    </class>
+</hibernate-mapping>
